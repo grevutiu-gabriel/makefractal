@@ -16,6 +16,7 @@
 #include <math.h>
 #include <malloc.h>
 #include <png.h>
+#include <stdlib.h>     /* atof */
 
 // Creates a test image for saving. Creates a Mandelbrot Set fractal of size width x height
 float *createMandelbrotImage(int width, int height, float xS, float yS, float rad, int maxIteration);
@@ -38,8 +39,8 @@ int main(int argc, char *argv[])
 	}
 
 	// Specify an output image size
-	int width = 500;
-	int height = 300;
+	int width = 1280;
+	int height = 720;
 
 	// Create a test image - in this case a Mandelbrot Set fractal
 	// The output is a 1D array of floats, length: width * height
