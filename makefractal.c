@@ -33,7 +33,7 @@ int writeImage(char* filename, int width, int height, float *buffer, char* title
 int main(int argc, char *argv[])
 {
 	// Make sure that the output filename argument has been provided
-	if (argc != 4) {
+	if (argc != 5) {
 		fprintf(stderr, "Please specify output file\n");
 		return 1;
 	}
@@ -42,11 +42,14 @@ int main(int argc, char *argv[])
 	// Specify an output image size
 	int width = atoi(argv[2]);
 	int height =atoi(argv[3]);
+	double zoom = atof(argv[4]);
+	//printf("Numarul este %.7f\n", intreg);
 
 	// Create a test image - in this case a Mandelbrot Set fractal
 	// The output is a 1D array of floats, length: width * height
 	printf("Creating Image\n");
-	float *buffer = createMandelbrotImage(width, height, -0.802, -0.177, 0.011, 110);
+	//float *buffer = createMandelbrotImage(width, height, -0.802, -0.177, 0.011, 110);
+	float *buffer = createMandelbrotImage(width, height, -0.8008, -0.177, zoom, 110);
 	if (buffer == NULL) {
 		return 1;
 	}
