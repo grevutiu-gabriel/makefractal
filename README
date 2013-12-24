@@ -5,3 +5,10 @@ I made in time some modifications in order to fit with my requirements.
 
 Source code is released under license GNU GPL v3.0.
 
+Compile with command :
+
+gcc makefractal.c -o makefractal -lm -lpng
+
+Run application with command:
+
+./makefractal fractal.png 500 500
