@@ -1,3 +1,8 @@
+// Grevutiu Gabriel
+//https://sites.google.com/site/haskell102/
+
+// Version 3.0
+
 // LibPNG example
 // A.Greensted
 // http://www.labbookpages.co.uk
