@@ -1,0 +1,7 @@
+makefractal is an application for creating Mandelbrot fractal using library 
+
+libpng. Initial source code is from http://www.labbookpages.co.uk/software/imgProc/files/libPNG/makePNG.c.
+I made in time some modifications in order to fit with my requirements.
+
+Source code is released under license GNU GPL v3.0.
+
